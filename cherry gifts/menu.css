@@ -1,0 +1,866 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Croissant One';
+    background-color: #FFCBE4;
+    width: 1440px;
+}
+nav{
+    background-color: #FF92B0;
+    color: #DE6785;
+    padding: 0 20px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu";
+    align-items: center;
+}
+nav img{
+    position: absolute;
+width: 72.91px;
+height: 72.02px;
+left: 31.04px;
+top: 14.04px;
+border-radius: 25px;
+background: url (Screen Shot 2023-05-30 at 7.50.png);
+}
+nav h1{
+    grid-area: logo;
+    position: absolute;
+width: 262px;
+height: 51px;
+left: 147px;
+top: 25px;
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 51px;
+color: #DE6785;
+}
+nav ul{
+    grid-area: menu;
+    list-style: none;
+    justify-self: center;
+    font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 45px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    color: #DE6785;
+    text-decoration: none;
+}
+nav input,nav label{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    nav{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 1fr;
+        grid-template-areas: "logo hamburger" "menu menu";
+        height: auto;
+    }
+}
+div{
+    margin-top: -50px;
+}
+.red{
+    position: absolute;
+width: 447px;
+height: 333px;
+left: 39px;
+top: 177px;
+background-color: rgba(255, 167, 191, 0.6);
+border-radius: 47px;
+}
+.red h1{
+    position: absolute;
+width: 174px;
+height: 45px;
+left: 150px;
+top: 20px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 45px;
+
+color: #841919;
+}
+.red img{
+    border-radius: 47px;
+    position: absolute;
+width: 324px;
+height: 236px;
+left: 71px;
+top: 71px;
+}
+.blossom{
+position: absolute;
+width: 447px;
+height: 333px;
+left: 496px;
+top: 177px;
+background-color: rgba(255, 167, 191, 0.6);
+border-radius: 47px;
+}
+.blossom h1{
+    position: absolute;
+width: 1714px;
+height: 45px;
+left: 100px;
+top: 20px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 45px;
+
+color: #841919;
+}
+.blossom img{
+    border-radius: 47px;
+    position: absolute;
+    rotate: 90deg;
+height: 324px;
+width: 236px;
+left: 110px;
+top: 31px;
+}
+.cherry{
+position: absolute;
+width: 447px;
+height: 333px;
+left: 953px;
+top: 177px;
+background-color: rgba(255, 167, 191, 0.6);
+border-radius: 47px;
+}
+.cherry h1{
+    position: absolute;
+width: 1174px;
+height: 45px;
+left: 120px;
+top: 20px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 45px;
+
+color: #841919;
+}
+.cherry img{
+    border-radius: 47px;
+    position: absolute;
+width: 324px;
+height: 236px;
+left: 61px;
+top: 71px;
+}
+.leaf{
+position: absolute;
+width: 447px;
+height: 333px;
+left: 39px;
+top: 524px;
+background-color: rgba(255, 167, 191, 0.6);
+border-radius: 47px;
+}
+.leaf h1{
+    position: absolute;
+width: 1174px;
+height: 45px;
+left: 120px;
+top: 20px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 45px;
+
+color: #841919;
+}
+.leaf img{
+    border-radius: 47px;
+    position: absolute;
+width: 324px;
+height: 236px;
+left: 61px;
+top: 71px;
+}
+.green{
+position: absolute;
+width: 447px;
+height: 333px;
+left: 496px;
+top: 524px;
+background-color: rgba(255, 167, 191, 0.6);
+border-radius: 47px;
+}
+.green h1{
+    position: absolute;
+width: 1174px;
+height: 45px;
+left: 120px;
+top: 20px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 45px;
+
+color: #841919;
+}
+.green img{
+    border-radius: 47px;
+    position: absolute;
+width: 324px;
+height: 236px;
+left: 61px;
+top: 71px;
+}
+.other{
+position: absolute;
+width: 447px;
+height: 333px;
+left: 953px;
+top: 524px;
+background-color: rgba(255, 167, 191, 0.6);
+border-radius: 47px;
+}
+.other h1{
+    position: absolute;
+width: 1174px;
+height: 45px;
+left: 170px;
+top: 20px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 45px;
+
+color: #841919;
+}
+.other img{
+    border-radius: 47px;
+    position: absolute;
+width: 324px;
+height: 236px;
+left: 61px;
+top: 71px;
+}
+.redi{
+    position: absolute;
+width: 1400px;
+height: 558.06px;
+left: 20px;
+border-radius: 47px;
+top: 978px;
+background-image: url(https://i.pinimg.com/236x/61/d1/a3/61d1a352a0ca876bdd23807f4b20cc1b.jpg);
+}
+.redi h1{
+    position: absolute;
+width: 1195px;
+height: 58px;
+left: 98px;
+top: 65px;
+
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.redi p{
+    position: absolute;
+width: 607px;
+height: 260px;
+left: 98px;
+top: 180px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 200;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.redi h2{
+    position: absolute;
+width: 134px;
+height: 58px;
+left: 1000px;
+top: 70px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.redi h3{
+    position: absolute;
+width: 67px;
+height: 58px;
+left: 1020px;
+top: 150px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.redi h4{
+    position: absolute;
+width: 298px;
+height: 52px;
+left: 950px;
+top: 320px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.redi h5{
+    position: absolute;
+width: 169px;
+height: 92px;
+left: 1000px;
+top: 400px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 46px;
+color: #FFFFFF;
+}
+.blosi{
+    position: absolute;
+width: 1400px;
+height: 558.06px;
+left: 20px;
+border-radius: 47px;
+top: 1580px;
+background-color: #DE6785;
+}
+.blosi h1{
+    position: absolute;
+width: 1195px;
+height: 58px;
+left: 98px;
+top: 65px;
+
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.blosi p{
+    position: absolute;
+width: 807px;
+height: 260px;
+left: 98px;
+top: 180px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 200;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.blosi h2{
+    position: absolute;
+width: 134px;
+height: 58px;
+left: 1000px;
+top: 70px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.blosi h3{
+    position: absolute;
+width: 67px;
+height: 58px;
+left: 1020px;
+top: 150px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.blosi h4{
+    position: absolute;
+width: 298px;
+height: 52px;
+left: 950px;
+top: 320px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.blosi h5{
+    position: absolute;
+width: 169px;
+height: 92px;
+left: 1000px;
+top: 400px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 46px;
+color: #FFFFFF;
+}
+.cheri{
+    position: absolute;
+width: 1400px;
+height: 558.06px;
+left: 20px;
+border-radius: 47px;
+top: 2182px;
+background-color: #D3321E;
+}
+.cheri h1{
+    position: absolute;
+width: 1195px;
+height: 58px;
+left: 98px;
+top: 65px;
+
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.cheri p{
+    position: absolute;
+width: 807px;
+height: 260px;
+left: 98px;
+top: 180px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 200;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.cheri h2{
+    position: absolute;
+width: 134px;
+height: 58px;
+left: 1000px;
+top: 70px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.cheri h3{
+    position: absolute;
+width: 67px;
+height: 58px;
+left: 1020px;
+top: 150px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.cheri h4{
+    position: absolute;
+width: 298px;
+height: 52px;
+left: 950px;
+top: 320px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.cheri h5{
+    position: absolute;
+width: 169px;
+height: 92px;
+left: 1000px;
+top: 400px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 46px;
+color: #FFFFFF;
+}
+.lef{
+    position: absolute;
+width: 1400px;
+height: 558.06px;
+left: 20px;
+border-radius: 47px;
+top: 2784px;
+background-color: #717F55;
+}
+.lef h1{
+    position: absolute;
+width: 1195px;
+height: 58px;
+left: 98px;
+top: 65px;
+
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.lef p{
+    position: absolute;
+width: 807px;
+height: 260px;
+left: 98px;
+top: 180px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 200;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.lef h2{
+    position: absolute;
+width: 134px;
+height: 58px;
+left: 1000px;
+top: 70px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.lef h3{
+    position: absolute;
+width: 67px;
+height: 58px;
+left: 1020px;
+top: 150px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.lef h4{
+    position: absolute;
+width: 298px;
+height: 52px;
+left: 950px;
+top: 320px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.lef h5{
+    position: absolute;
+width: 169px;
+height: 92px;
+left: 1000px;
+top: 400px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 46px;
+color: #FFFFFF;
+}
+.gri{
+    position: absolute;
+width: 1400px;
+height: 558.06px;
+left: 20px;
+border-radius: 47px;
+top: 3386px;
+background-color: #09271B;
+}
+.gri h1{
+    position: absolute;
+width: 1195px;
+height: 58px;
+left: 98px;
+top: 65px;
+
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.gri p{
+    position: absolute;
+width: 807px;
+height: 260px;
+left: 98px;
+top: 180px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 200;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.gri h2{
+    position: absolute;
+width: 134px;
+height: 58px;
+left: 1000px;
+top: 70px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.gri h3{
+    position: absolute;
+width: 67px;
+height: 58px;
+left: 1020px;
+top: 150px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 58px;
+color: #FFFFFF;
+}
+.gri h4{
+    position: absolute;
+width: 298px;
+height: 52px;
+left: 950px;
+top: 320px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+color: #FFFFFF;
+}
+.gri h5{
+    position: absolute;
+width: 1169px;
+height: 92px;
+left: 1000px;
+top: 400px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 46px;
+color: #FFFFFF;
+}
+.tt{
+    position: absolute;
+width: 1400px;
+height: 849px;
+left: 20px;
+top: 3988px;
+
+background: #FF92B0;
+border-radius: 47px;
+}
+.tt h1{
+    position: absolute;
+    width: 1195px;
+    height: 58px;
+    left: 650px;
+    top: 65px;
+    
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+.d{
+    position: absolute;
+    width: 420px;
+    height: 667px;
+    left: 64px;
+    top: 116px;
+    border-radius: 47px;
+}
+.f{
+    position: absolute;
+    width: 420px;
+    height: 667px;
+    left: 510px;
+    top: 116px;
+    border-radius: 47px;
+}
+.g{
+    position: absolute;
+    width: 420px;
+    height: 667px;
+    left: 956px;
+    top: 116px;
+    border-radius: 47px;
+}
+.de{
+    position: absolute;
+width: 1400px;
+height: 281px;
+left: 20px;
+top: 4890px;
+
+background: #FF92B0;
+border-radius: 47px;
+}
+.de h1{
+    position: absolute;
+width: 3132px;
+height: 70px;
+left: 554px;
+top: 10px;
+font-family: 'Hina Mincho';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 70px;
+color: #FFFFFF;
+}
+.de h2{
+    position: absolute;
+    width: 269px;
+    height: 140px;
+    left: 126px;
+    top: 100px;
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.de h3{
+    position: absolute;
+    width: 269px;
+    height: 140px;
+    left: 86px;
+    top: 150px;
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.de h4{
+    position: absolute;
+    width: 455px;
+    height: 140px;
+    left: 680px;
+    top: 100px;
+    
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    
+    color: #FFFFFF;
+}
+.de h5{
+    position: absolute;
+    width: 455px;
+    height: 140px;
+    left: 471px;
+    top: 150px;
+    
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    
+    color: #FFFFFF;
+}
+.de h6{
+    position: absolute;
+    width: 249px;
+    height: 140px;
+    left: 1152px;
+    top: 100px;
+    
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    
+    color: #FFFFFF;
+}
+.de p{
+    position: absolute;
+    width: 249px;
+    height: 140px;
+    left: 1082px;
+    top: 150px;
+    
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    
+    color: #FFFFFF;
+}
